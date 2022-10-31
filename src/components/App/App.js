@@ -9,7 +9,8 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      reservations: []
+      reservations: [],
+      error: ''
     }
   }
 
@@ -19,8 +20,8 @@ class App extends Component {
         .catch(error => this.setState({ error: error }))
   }
 
-  // addReservation = (newReservation) => {
-  //   this.setState({ reservations: [...this.state.reservations, newReservation]})
+  //  addReservation = (newReservation) => {
+  //   this.setState({ reservation: [...this.state.reservations, newReservation]})
   // }
 
   addReservation = (newReservation) => {
@@ -32,8 +33,8 @@ class App extends Component {
     return (
       <main className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
-        <Form addReservation={this.state.reservations} />
-        <Reservations reservations={this.state.reservations} />
+        <Form addReservation={this.addReservation}/>
+        <Reservations reservations={this.state.reservations}/>
          {/* <div className='resy-form'></div>
          <div className='resy-container'></div> */}
       </main>

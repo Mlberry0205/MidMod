@@ -40,4 +40,4 @@ const postReservation = async (newReservation) => {
   }
 };
 
-export {getReservations, postReservation}
+export {getReservations, postReservation }
