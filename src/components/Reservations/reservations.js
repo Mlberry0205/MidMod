@@ -2,16 +2,22 @@ import React from 'react'
 import Card from '../Card/Card'
 import './Reservations.css'
 
-const Reservations = (props) => {
-  const reservationCard = reservation.map(reservation => {
+const Reservations = ([reservations]) => {
+  const reservationCard = reservations.map(reservation => {
     return (
-      <div className='reservation-container'>
-      <Card />
-      </div>
+      <Card 
+        name={reservation.name}
+        date={reservation.date}
+        time={reservation.time}
+        numGuests={reservation.number}
+        id={reservation.id}
+        key={reservation.id}
+      />
+   
     )
   })
   return (
-    <div>
+    <div className='reservation-container'>
       {reservationCard}
     </div>
   )
