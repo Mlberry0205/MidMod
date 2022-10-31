@@ -6,9 +6,9 @@ const Card = ({name, date, time, number, id}) => {
     <div className='card'>
       <h3>{name}</h3>
       <p>{date}</p>
-      <p>{time}</p>
-      <p>{number}</p>
-      <button>🗑</button>
+      <p>{time} pm</p>
+      <p>number of guests: {number}</p>
+      <button>CANCEL</button>
     </div>
   )
 }
