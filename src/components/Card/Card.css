@@ -1,0 +1,11 @@
+.card {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 3px solid rgb(62, 128, 120);
+  padding: 5px;
+  border-radius: 15px;
+  background-color :#a7a2b6;
+  box-shadow: 3px 5px 5px grey;
+  width: 50%;
+}
